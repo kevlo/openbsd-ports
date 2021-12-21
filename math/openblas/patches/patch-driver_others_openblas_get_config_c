@@ -1,0 +1,21 @@
+$OpenBSD$
+
+Index: driver/others/openblas_get_config.c
+--- driver/others/openblas_get_config.c.orig
++++ driver/others/openblas_get_config.c
+@@ -76,13 +76,13 @@ char* CNAME() {
+ char tmpstr[20];
+   strcpy(tmp_config_str, openblas_config_str);
+ #ifdef DYNAMIC_ARCH
+-  strcat(tmp_config_str, gotoblas_corename());
++  strlcat(tmp_config_str, gotoblas_corename(), sizeof(tmp_config_str));
+ #endif
+   if (openblas_get_parallel() == 0)
+     sprintf(tmpstr, " SINGLE_THREADED");
+   else 
+     snprintf(tmpstr,19," MAX_THREADS=%d",MAX_CPU_NUMBER);
+-  strcat(tmp_config_str, tmpstr);
++  strlcat(tmp_config_str, tmpstr, sizeof(tmp_config_str));
+   return tmp_config_str;
+ }
+ 

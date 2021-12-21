@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: Makefile
+--- Makefile.orig
++++ Makefile
+@@ -125,7 +125,6 @@ ifeq ($(OSNAME), $(filter $(OSNAME),Linux SunOS Androi
+ endif
+ ifeq ($(OSNAME), $(filter $(OSNAME),OpenBSD NetBSD))
+ 	@$(MAKE) -C exports so
+-	@ln -fs $(LIBSONAME) $(LIBPREFIX).so
+ endif
+ ifeq ($(OSNAME), Darwin)
+ 	@$(MAKE) -C exports dyn

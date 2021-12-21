@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: cpuid_mips64.c
+--- cpuid_mips64.c.orig
++++ cpuid_mips64.c
+@@ -113,6 +113,8 @@ int detect(void){
+       return CPU_SICORTEX;
+     }
+   }
++else
++	return CPU_SICORTEX;
+ #endif
+     return CPU_UNKNOWN;
+ }

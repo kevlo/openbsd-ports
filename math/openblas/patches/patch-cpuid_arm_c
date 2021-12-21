@@ -1,0 +1,15 @@
+$OpenBSD$
+
+Index: cpuid_arm.c
+--- cpuid_arm.c.orig
++++ cpuid_arm.c
+@@ -181,7 +181,8 @@ int detect(void)
+ 	  }
+ 
+ 	}
+-
++#else
++	return CPU_ARMV7;
+ #endif
+ 
+ 	return CPU_UNKNOWN;

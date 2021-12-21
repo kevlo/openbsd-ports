@@ -1,0 +1,19 @@
+$OpenBSD$
+
+Index: Makefile.system
+--- Makefile.system.orig
++++ Makefile.system
+@@ -1516,11 +1516,11 @@ FCOMMON_OPT += -g
+ endif
+ 
+ ifndef COMMON_OPT
+-COMMON_OPT = -O2
++COMMON_OPT =
+ endif
+ 
+ ifndef FCOMMON_OPT
+-FCOMMON_OPT = -O2 -frecursive
++FCOMMON_OPT = -frecursive
+ endif
+ 
+ override CFLAGS     += $(COMMON_OPT) $(CCOMMON_OPT) -I$(TOPDIR)
