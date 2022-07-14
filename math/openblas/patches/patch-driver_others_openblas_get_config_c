@@ -1,5 +1,3 @@
-$OpenBSD$
-
 Index: driver/others/openblas_get_config.c
 --- driver/others/openblas_get_config.c.orig
 +++ driver/others/openblas_get_config.c

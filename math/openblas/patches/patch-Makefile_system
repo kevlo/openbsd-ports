@@ -1,9 +1,7 @@
-$OpenBSD$
-
 Index: Makefile.system
 --- Makefile.system.orig
 +++ Makefile.system
-@@ -1516,11 +1516,11 @@ FCOMMON_OPT += -g
+@@ -1519,11 +1519,11 @@ FCOMMON_OPT += -g
  endif
  
  ifndef COMMON_OPT

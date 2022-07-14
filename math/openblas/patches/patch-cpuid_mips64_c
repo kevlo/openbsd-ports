@@ -1,5 +1,3 @@
-$OpenBSD$
-
 Index: cpuid_mips64.c
 --- cpuid_mips64.c.orig
 +++ cpuid_mips64.c

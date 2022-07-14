@@ -1,10 +1,8 @@
-# $OpenBSD$
-
 ONLY_FOR_ARCHS =	${CLANG_ARCHS}
 
 COMMENT =		optimized BLAS library based on GotoBLAS2
 
-V =			0.3.19
+V =			0.3.20
 PKGNAME =		openblas-${V}
 
 GH_ACCOUNT =		xianyi

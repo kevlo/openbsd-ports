@@ -1,5 +1,3 @@
-$OpenBSD$
-
 Index: Makefile.install
 --- Makefile.install.orig
 +++ Makefile.install

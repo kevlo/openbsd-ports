@@ -1,9 +1,7 @@
-$OpenBSD$
-
 Index: exports/Makefile
 --- exports/Makefile.orig
 +++ exports/Makefile
-@@ -210,10 +210,10 @@ else
+@@ -214,10 +214,10 @@ else
  	$(OBJCOPY) --redefine-syms objcopy.def ../$(LIBNAME) ../$(LIBNAME).renamed
  ../$(LIBSONAME) : ../$(LIBNAME).renamed linktest.c
  endif
